@@ -1,0 +1,31 @@
+In lieu of the Lab for this week, we are providing a take-home lab assignment that will count towards your 6 marks in the home assignments as per the evaluation policy.
+
+For the given problem statement, you have to provide a readable (add comments and have well-defined variable names), modular (use functions wherever possible), and efficient (you should employ all the data structures you have been taught so far) code. 
+
+The code needs to be submitted to the Hackerrank contest, where it will checked for the test cases.
+Additionally, being a take-home assignment, we will have a strict plagiarism policy in place, and for that, you additionally and compulsory need to submit the .py file version of your code (the code that you submit to hacker rank) on the classroom here on this assignment as well. The code file name should strictly be the same as your hackerrank ID from which you make hackerrank submissions. 
+For example, if your IIIT-D Hackerrank is `abc123`, then your code file submitted to the classroom will be `abc123.py`.
+
+-----------------------------------
+Problem Statement
+Consider a 100-stories building with 3 three independent lifts/elevators (L1, L2, L3), with all lifts that can move up/down depending upon their locations. Additionally, each floor has two buttons (up and down) to call the lift to a particular floor (the ground (up) and the top (down) floors have only a single button). When someone presses a button on a floor, the closest one (in terms of the number of floors it has to travel to reach the particular floor) comes to that floor, depending on whether they are sitting ideal or moving in the same direction. For example, if three lifts are at the following locations: L1 - 0th (ideal), L2 - 5th (moving up to the top), and L3 - 9th (moving down to the ground), and the down button was pressed on the 4th floor, L1 should come.
+Note that for each case, we are also given the designation of the moving life. For example, in the above scenario, if L2 is on the 5th floor and moving up to the 6th floor. In that case, L2 should come instead of L1. 
+
+You Provide a Python-based solution to mimic the regular operations of lifts in the above scenario.  In our use case, we assume 3 lifts and 3 states `ideal`, `moving up`, or `moving down`. Additionally, for the sake of simplicity, you can assume that when moving up or down will always stop at all floors in between the current floor and the destination floor. For example, when moving up from floor `1` to `N`, the lift, i.e., it will compulsory stop at `2,3,4....N-1`. There is no `pass` or `reset` on the lift. 
+
+In case of a tie-breaker, the lift with the lowest number will be given preference. I.e., if L1, L2, and L3 are all equally likely to be the most optimal case, then L1 will be given preference to move. Similarly, in a case where L2 and L3 are equally valid, then L2 will be given preference.
+------------
+Input/Output Format
+The exact input and output format will be shared in the Hackerrank. In due course, you will receive the HR link via mail the usual way. 
+
+------------
+Imp note on destination validity: Make sure you check if the destination entered by the user is a valid floor or not in a building with 1-100 floors with an additional ground floor as 0th floor. Hence a destination of <0 is invalid so is a destination of >100. 
+
+------
+Timing:
+The take-home lab assignment will end at 12:30 PM Sunday afternoon. You will receive a hackerrank link in the morning, which will be valid from 12:30 PM Saturday afternoon to 12:30 PM Sunday afternoon. 
+
+-----------
+Submission
+Before 12:30 PM Sunday afternoon, you need to submit your code on Hackerank and a copy of your code in a .py file with proper naming conventions in the classroom as well. 
+Late submissions in the classroom will be penalized. Any submission beyond 12:35 PM (5 mins grace period) in the classroom will be invalid. Any submission after 12:29 PM on hackerrank will be invalid, i.e., once the competition gets locked, your submissions outside the duration will not be considered.
